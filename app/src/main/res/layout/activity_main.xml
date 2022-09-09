@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suvrodev Howlader"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="#43A047"
+        android:padding="10sp"
+        />
+<!--    <Button-->
+<!--        android:id="@+id/id_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Button"-->
+<!--        />-->
+
+    <include
+        layout="@layout/activity_page1"
+        />
+
+    <include
+        layout="@layout/activity_page2"
+        />
+
+    <LinearLayout
+        android:id="@+id/id_liear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="bottom"
+       >
+       <Button
+           android:id="@+id/id_Button_page_1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Page-1"
+           android:gravity="center"
+           />
+       <Button
+           android:id="@+id/id_Button_page_2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Page-2"
+           android:gravity="center"
+           />
+
+   </LinearLayout>
+
+</LinearLayout>
