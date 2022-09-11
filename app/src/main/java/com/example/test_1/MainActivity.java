@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+       StoreClass storeClass=new StoreClass(MainActivity.this,"SS");
+       storeClass.MyToast_("Starting App");
+
 
 //        Button ThisPageButton= (Button) findViewById(R.id.id_button);
 //        ThisPageButton.setOnClickListener(new View.OnClickListener() {
@@ -71,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        ///Only included page-2 here from xml
+
 
         View view= LayoutInflater.from(this).inflate(R.layout.activity_page2,null);
         textView_2=view.findViewById(R.id.id_tv_2);
@@ -78,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
        // layout.setViewTranslationCallback((ViewTranslationCallback) view);
         layout.addView(view);
+
 
         textView_2.setText("Ok, This is Text view of 2nd Page");
         Click_Button_Page_2.setOnClickListener(new View.OnClickListener() {
@@ -103,9 +109,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
     }
+
+//    void Toast_(String str){
+//        Toast.makeText(getApplicationContext(),str,Toast.LENGTH_SHORT).show();
+//    }
 }
